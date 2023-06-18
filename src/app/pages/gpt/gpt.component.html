@@ -1,0 +1,19 @@
+<div class="p-3">
+    <div class="card">
+        <div class="card-body">
+            <h1>GPT component</h1>
+
+            <form [formGroup]="queryFormGroup" (ngSubmit)="handleAskGPT()">
+                <div class="mb-3">
+                    <label for="" class="form-label"> Query : </label>
+                    <textarea formControlName = "query" id="" cols="30" rows="10" class="form-control"> </textarea>
+                </div>
+                <button class="btn btn-success">Ask GPT</button>
+            </form>
+
+            <div class="alert alert-success">
+                <pre>{{response|json}}</pre>
+            </div>
+        </div>
+    </div>
+</div>
