@@ -17,7 +17,7 @@ export class GptService {
     };
     const httpOptions = {
       headers: new HttpHeaders({
-        "Authorization": "Bearer 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" // put your api key 
+        "Authorization": "Bearer YOUR_API_KEY" // put your api key 
       })
     };
   
